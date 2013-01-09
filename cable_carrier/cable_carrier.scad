@@ -1,7 +1,7 @@
 module link_female_left() {
 	color([.5, .8, .5, 1.]) {
 		difference() {
-			dxf_linear_extrude(file="link.dxf", convexity = 10, layer="0", height=6, center=false, $fn=100);
+			linear_extrude(height=6, center=false) import ("link.dxf", convexity = 10, layer="0", $fn=36);
 			translate([0,0,-.2]) {
 				cylinder(r=6.8,h=3.5,center=false, $fn=36);
 				translate([50,0,0]) {
@@ -24,7 +24,7 @@ module link_male_left() {
 			rotate([0,180,0]) {
 				union() {
 					difference() {
-						dxf_linear_extrude(file="link.dxf", convexity = 10, layer="0", height=6, center=false, $fn=100);
+						linear_extrude(height=6, center=false) import ("link.dxf", convexity = 10, layer="0", $fn=36);
 						translate([0,0,3]) {
 							cylinder(r=14.2,h=3.5,center=false, $fn=36);
 							translate([50,0,0]) {
@@ -47,7 +47,7 @@ module link_male_left() {
 module horizontal_part() {
 	color([.8, .7, .9, 1.]) {
 		difference() { // all cubes are for the chamfer
-			dxf_linear_extrude(file="link.dxf", convexity = 10, layer="horizontal", height=3, center=false, $fn=100);
+			linear_extrude(height=3, center=false) import ("link.dxf", convexity = 10, layer="horizontal", $fn=36);
 			translate([10-3.2,-1.1,3.2]) {
 				rotate([0,45,0]) {
 					cube(size = [10,7,6], center = false);
