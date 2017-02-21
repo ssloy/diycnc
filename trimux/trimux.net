@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ssloy/+/diycnc/trimux/trimux.sch)
-    (date "Fri 17 Feb 2017 08:57:32 AM CET")
+    (date "Fri 17 Feb 2017 11:31:29 PM CET")
     (tool "Eeschema 4.0.5+dfsg1-4")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -138,10 +138,10 @@
   (libraries
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
-    (library (logical dg403dj)
-      (uri /home/ssloy/+/diycnc/trimux/dg403dj.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical dg403dj)
+      (uri /home/ssloy/+/diycnc/trimux/dg403dj.lib)))
   (nets
     (net (code 1) (name /S1)
       (node (ref IC2) (pin 15))
