@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name trimux)(type KiCad)(uri /home/ssloy/+/diycnc/trimux)(options "")(descr ""))
+)
