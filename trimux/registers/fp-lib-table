@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name registers)(type KiCad)(uri Z:\home\ssloy\+\diycnc\trimux\registers)(options "")(descr ""))
+)

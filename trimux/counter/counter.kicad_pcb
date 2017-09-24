@@ -1,11 +1,11 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.5+dfsg1-4)
+(kicad_pcb (version 4) (host pcbnew 4.0.5)
 
   (general
     (links 395)
     (no_connects 69)
     (area 36.220967 22.807966 131.127634 128.4963)
     (thickness 1.6)
-    (drawings 89)
+    (drawings 88)
     (tracks 972)
     (zones 0)
     (modules 127)
@@ -5051,9 +5051,6 @@
     )
   )
 
-  (gr_text "1 Cs Cm" (at 116.965 34.655 90) (layer F.SilkS) (tstamp 59C52EBD)
-    (effects (font (size 1.2 1.2) (thickness 0.25)))
-  )
   (gr_text "-5 0 5" (at 78.25 71.5 270) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
