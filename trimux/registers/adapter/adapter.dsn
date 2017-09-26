@@ -24,9 +24,9 @@
       (path pcb 0  15000 -15000  15000 -115000  115000 -115000  115000 -15000
             15000 -15000  15000 -15000)
     )
-    (via "Via[0-1]_800:400_um" "Via[0-1]_1200:400_um")
+    (via "Via[0-1]_600:300_um" "Via[0-1]_1200:400_um")
     (rule
-      (width 500)
+      (width 400)
       (clearance 300.1)
       (clearance 300.1 (type default_smd))
       (clearance 75 (type smd_smd))
@@ -34,28 +34,28 @@
   )
   (placement
     (component registers:IDC10
-      (place P1 50800 -27940 front 180 (PN CONN_02X05))
-      (place P2 50800 -53340 front 180 (PN CONN_02X05))
-      (place P3 50800 -76200 front 180 (PN CONN_02X05))
-      (place P4 50800 -101600 front 180 (PN CONN_02X05))
-      (place P5 38100 -27940 front 180 (PN CONN_02X05))
-      (place P6 38100 -53340 front 180 (PN CONN_02X05))
-      (place P7 38100 -76200 front 180 (PN CONN_02X05))
-      (place P8 38100 -101600 front 180 (PN CONN_02X05))
-      (place P9 25400 -27940 front 180 (PN CONN_02X05))
-      (place P10 25400 -53340 front 180 (PN CONN_02X05))
-      (place P11 25400 -76200 front 180 (PN CONN_02X05))
-      (place P12 25400 -101600 front 180 (PN CONN_02X05))
-      (place P13 64770 -101600 front 180 (PN CONN_02X05))
+      (place P1 52070 -26670 front 180 (PN CONN_02X05))
+      (place P2 41910 -26670 front 180 (PN CONN_02X05))
+      (place P3 41910 -52070 front 180 (PN CONN_02X05))
+      (place P4 41910 -77470 front 180 (PN CONN_02X05))
+      (place P5 41910 -102870 front 180 (PN CONN_02X05))
+      (place P6 31750 -26670 front 180 (PN CONN_02X05))
+      (place P7 31750 -52070 front 180 (PN CONN_02X05))
+      (place P8 31750 -77470 front 180 (PN CONN_02X05))
+      (place P9 31750 -102870 front 180 (PN CONN_02X05))
+      (place P10 21590 -26670 front 180 (PN CONN_02X05))
+      (place P11 21590 -52070 front 180 (PN CONN_02X05))
+      (place P12 21590 -77470 front 180 (PN CONN_02X05))
+      (place P13 21590 -102870 front 180 (PN CONN_02X05))
     )
     (component registers:IDC16
-      (place P21 72390 -31750 front 0 (PN CONN_02X08))
-      (place P22 86360 -33020 front 0 (PN CONN_02X08))
-      (place P23 86360 -64770 front 0 (PN CONN_02X08))
-      (place P24 86360 -96520 front 0 (PN CONN_02X08))
-      (place P25 104140 -33020 front 0 (PN CONN_02X08))
-      (place P26 104140 -64770 front 0 (PN CONN_02X08))
-      (place P27 104140 -96520 front 0 (PN CONN_02X08))
+      (place P21 99060 -109220 front 270 (PN CONN_02X08))
+      (place P22 76200 -35560 front 270 (PN CONN_02X08))
+      (place P23 76200 -66040 front 270 (PN CONN_02X08))
+      (place P24 99060 -21590 front 270 (PN CONN_02X08))
+      (place P25 99060 -50800 front 270 (PN CONN_02X08))
+      (place P26 74930 -95250 front 270 (PN CONN_02X08))
+      (place P27 99060 -80010 front 270 (PN CONN_02X08))
     )
   )
   (library
@@ -137,9 +137,9 @@
       (shape (rect B.Cu -952.5 -952.5 952.5 952.5))
       (attach off)
     )
-    (padstack "Via[0-1]_800:400_um"
-      (shape (circle F.Cu 800))
-      (shape (circle B.Cu 800))
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
       (attach off)
     )
     (padstack "Via[0-1]_1200:400_um"
@@ -443,10 +443,10 @@
       /Ql9 /Qm1 /Qm10 /Qm11 /Qm12 /Qm13 /Qm2 /Qm3 /Qm4 /Qm5 /Qm6 /Qm7 /Qm8
       /Qm9
       (circuit
-        (use_via Via[0-1]_800:400_um)
+        (use_via Via[0-1]_600:300_um)
       )
       (rule
-        (width 500)
+        (width 400)
         (clearance 300.1)
       )
     )

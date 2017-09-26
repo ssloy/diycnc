@@ -1,0 +1,122 @@
+
+(rules PCB adapter
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 26)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 300.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 75.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1200:400_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_1200:400_um" "Via[0-1]_1200:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:400_um-kicad_default" "Via[0-1]_1200:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:300_um-pwr" "Via[0-1]_600:300_um" pwr
+  )
+  (via 
+    "Via[0-1]_1200:400_um-pwr" "Via[0-1]_1200:400_um" pwr
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (via_rule
+    pwr "Via[0-1]_1200:400_um-pwr"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /C1 /Ah1 /Qh1 /Am1 /Al1 /Qm1 /Ql1 /C2
+    /Ah2 /Qh2 /Am2 /Al2 /Qm2 /Ql2 /C3 /Ah3
+    /Qh3 /Am3 /Al3 /Qm3 /Ql3 /C4 /Ah4 /Qh4
+    /Am4 /Al4 /Qm4 /Ql4 /C5 /Ah5 /Qh5 /Am5
+    /Al5 /Qm5 /Ql5 /C6 /Ah6 /Qh6 /Am6 /Al6
+    /Qm6 /Ql6 /C7 /Ah7 /Qh7 /Am7 /Al7 /Qm7
+    /Ql7 /C8 /Ah8 /Qh8 /Am8 /Al8 /Qm8 /Ql8
+    /C9 /Ah9 /Qh9 /Am9 /Al9 /Qm9 /Ql9 /C10
+    /Ah10 /Qh10 /Am10 /Al10 /Qm10 /Ql10 /C11 /Ah11
+    /Qh11 /Am11 /Al11 /Qm11 /Ql11 /C12 /Ah12 /Qh12
+    /Am12 /Al12 /Qm12 /Ql12 /C13 /Ah13 /Qh13 /Am13
+    /Al13 /Qm13 /Ql13
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class pwr
+    /+5V /GND "/-5V"
+    (clearance_class pwr)
+    (via_rule pwr)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
