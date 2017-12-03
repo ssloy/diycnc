@@ -141,7 +141,7 @@ U 1 1 5A1EE63D
 P -2575 -5325
 F 0 "C1" H -2565 -5255 50  0000 L CNN
 F 1 "4.7u" H -2565 -5405 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H -2575 -5325 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H -2575 -5325 50  0001 C CNN
 F 3 "" H -2575 -5325 50  0001 C CNN
 	1    -2575 -5325
 	1    0    0    -1  
@@ -152,7 +152,7 @@ U 1 1 5A1EE81B
 P -2200 -5050
 F 0 "C3" H -2190 -4980 50  0000 L CNN
 F 1 "4.7u" H -2190 -5130 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H -2200 -5050 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H -2200 -5050 50  0001 C CNN
 F 3 "" H -2200 -5050 50  0001 C CNN
 	1    -2200 -5050
 	1    0    0    -1  
@@ -1156,7 +1156,7 @@ Wire Wire Line
 	7075 5375 7075 5150
 Connection ~ 7625 5375
 Wire Wire Line
-	7000 5375 7000 5150
+	7000 5150 7000 6100
 Connection ~ 7075 5375
 Wire Wire Line
 	4700 5150 4700 5225
@@ -1380,5 +1380,61 @@ F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 1300 5450 50  0001 C CNN
 F 3 "" H 1300 5450 50  0001 C CNN
 	1    1300 5450
 	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5A23F48A
+P 1300 5700
+F 0 "J6" H 1300 5800 50  0000 C CNN
+F 1 "Conn_01x01" H 1300 5600 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 1300 5700 50  0001 C CNN
+F 3 "" H 1300 5700 50  0001 C CNN
+	1    1300 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 5450 1625 5700
+Wire Wire Line
+	1625 5700 1500 5700
+Connection ~ 1625 5450
+$Comp
+L LED_bicolor D1
+U 1 1 5A2348D1
+P 7250 6100
+F 0 "D1" H 7250 6325 50  0000 C CNN
+F 1 "LED_bicolor" H 7250 5850 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 7250 6100 50  0001 C CNN
+F 3 "" H 7250 6100 50  0001 C CNN
+	1    7250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5A234CCC
+P 7675 6225
+F 0 "R2" H 7705 6245 50  0000 L CNN
+F 1 "1k" H 7705 6185 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 7675 6225 50  0001 C CNN
+F 3 "" H 7675 6225 50  0001 C CNN
+	1    7675 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 6100 7675 6100
+Wire Wire Line
+	7675 6100 7675 6125
+Connection ~ 7000 5375
+Wire Wire Line
+	7675 6325 7675 6375
+$Comp
+L GNDREF #PWR036
+U 1 1 5A235831
+P 7675 6375
+F 0 "#PWR036" H 7675 6125 50  0001 C CNN
+F 1 "GNDREF" H 7675 6225 50  0000 C CNN
+F 2 "" H 7675 6375 50  0000 C CNN
+F 3 "" H 7675 6375 50  0000 C CNN
+	1    7675 6375
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
