@@ -1,0 +1,1703 @@
+EESchema Schematic File Version 2
+LIBS:trimux
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:alu-a-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR01
+U 1 1 5A1EE1DC
+P -2150 -5500
+F 0 "#PWR01" H -2150 -5650 50  0001 C CNN
+F 1 "+5V" H -2150 -5350 50  0000 C CNN
+F 2 "" H -2150 -5500 50  0000 C CNN
+F 3 "" H -2150 -5500 50  0000 C CNN
+	1    -2150 -5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR02
+U 1 1 5A1EE1F0
+P -1800 -4900
+F 0 "#PWR02" H -1625 -4925 50  0001 C CNN
+F 1 "-5V" H -1825 -5050 50  0000 C CNN
+F 2 "" H -1800 -4900 50  0000 C CNN
+F 3 "" H -1800 -4900 50  0000 C CNN
+	1    -1800 -4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR03
+U 1 1 5A1EE204
+P -2450 -5175
+F 0 "#PWR03" H -2450 -5425 50  0001 C CNN
+F 1 "GNDREF" H -2450 -5325 50  0000 C CNN
+F 2 "" H -2450 -5175 50  0000 C CNN
+F 3 "" H -2450 -5175 50  0000 C CNN
+	1    -2450 -5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 5A1EE26B
+P -1400 -5350
+F 0 "P1" H -1400 -5150 50  0000 C CNN
+F 1 "CONN_01X03" V -1300 -5350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H -1400 -5350 50  0001 C CNN
+F 3 "" H -1400 -5350 50  0000 C CNN
+	1    -1400 -5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5A1EE417
+P -1900 -5475
+F 0 "#FLG04" H -1900 -5380 50  0001 C CNN
+F 1 "PWR_FLAG" H -1900 -5295 50  0000 C CNN
+F 2 "" H -1900 -5475 50  0000 C CNN
+F 3 "" H -1900 -5475 50  0000 C CNN
+	1    -1900 -5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5A1EE42F
+P -1750 -5375
+F 0 "#FLG05" H -1750 -5280 50  0001 C CNN
+F 1 "PWR_FLAG" H -1750 -5195 50  0000 C CNN
+F 2 "" H -1750 -5375 50  0000 C CNN
+F 3 "" H -1750 -5375 50  0000 C CNN
+	1    -1750 -5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5A1EE440
+P -1625 -5275
+F 0 "#FLG06" H -1625 -5180 50  0001 C CNN
+F 1 "PWR_FLAG" H -1625 -5095 50  0000 C CNN
+F 2 "" H -1625 -5275 50  0000 C CNN
+F 3 "" H -1625 -5275 50  0000 C CNN
+	1    -1625 -5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5A1EE555
+P -2375 -5325
+F 0 "C2" H -2365 -5255 50  0000 L CNN
+F 1 ".1u" H -2365 -5405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -2375 -5325 50  0001 C CNN
+F 3 "" H -2375 -5325 50  0001 C CNN
+	1    -2375 -5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C1
+U 1 1 5A1EE63D
+P -2575 -5325
+F 0 "C1" H -2565 -5255 50  0000 L CNN
+F 1 "4.7u" H -2565 -5405 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H -2575 -5325 50  0001 C CNN
+F 3 "" H -2575 -5325 50  0001 C CNN
+	1    -2575 -5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C3
+U 1 1 5A1EE81B
+P -2200 -5050
+F 0 "C3" H -2190 -4980 50  0000 L CNN
+F 1 "4.7u" H -2190 -5130 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H -2200 -5050 50  0001 C CNN
+F 3 "" H -2200 -5050 50  0001 C CNN
+	1    -2200 -5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 5A1EE8AA
+P -2000 -5050
+F 0 "C4" H -1990 -4980 50  0000 L CNN
+F 1 ".1u" H -1990 -5130 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -2000 -5050 50  0001 C CNN
+F 3 "" H -2000 -5050 50  0001 C CNN
+	1    -2000 -5050
+	1    0    0    -1  
+$EndComp
+Text Label 4075 -3800 0    60   ~ 0
+OPCODE_0
+Text Label 4075 -3700 0    60   ~ 0
+OPCODE_1
+Text Label 4075 -3600 0    60   ~ 0
+OPCODE_2
+Text Label 4075 -3500 0    60   ~ 0
+OPCODE_3
+Text Label 4075 -3400 0    60   ~ 0
+OPCODE_4
+$Comp
+L Conn_01x05 J8
+U 1 1 5A1F6ACF
+P 4900 -4150
+F 0 "J8" H 4900 -3850 50  0000 C CNN
+F 1 "Conn_01x05" H 4900 -4450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4900 -4150 50  0001 C CNN
+F 3 "" H 4900 -4150 50  0001 C CNN
+	1    4900 -4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L trimux U2
+U 1 1 5A20FB5B
+P 7250 -2300
+F 0 "U2" H 7270 -2410 60  0000 C CNN
+F 1 "trimux" H 7270 -1810 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 7360 -2300 60  0001 C CNN
+F 3 "" H 7360 -2300 60  0001 C CNN
+	1    7250 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 5A20FB61
+P 7950 -2300
+F 0 "#PWR07" H 7950 -2450 50  0001 C CNN
+F 1 "+5V" H 7950 -2150 50  0000 C CNN
+F 2 "" H 7950 -2300 50  0000 C CNN
+F 3 "" H 7950 -2300 50  0000 C CNN
+	1    7950 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR08
+U 1 1 5A20FB67
+P 7650 -2125
+F 0 "#PWR08" H 7825 -2150 50  0001 C CNN
+F 1 "-5V" H 7625 -2275 50  0000 C CNN
+F 2 "" H 7650 -2125 50  0000 C CNN
+F 3 "" H 7650 -2125 50  0000 C CNN
+	1    7650 -2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR09
+U 1 1 5A20FB6D
+P 7825 -2200
+F 0 "#PWR09" H 7825 -2450 50  0001 C CNN
+F 1 "GNDREF" H 7825 -2350 50  0000 C CNN
+F 2 "" H 7825 -2200 50  0000 C CNN
+F 3 "" H 7825 -2200 50  0000 C CNN
+	1    7825 -2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 5A22754B
+P -1400 -5850
+F 0 "P3" H -1400 -5650 50  0000 C CNN
+F 1 "CONN_01X03" V -1300 -5850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H -1400 -5850 50  0001 C CNN
+F 3 "" H -1400 -5850 50  0000 C CNN
+	1    -1400 -5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 5A227628
+P -1400 -6350
+F 0 "P2" H -1400 -6150 50  0000 C CNN
+F 1 "CONN_01X03" V -1300 -6350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H -1400 -6350 50  0001 C CNN
+F 3 "" H -1400 -6350 50  0000 C CNN
+	1    -1400 -6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J1
+U 1 1 5A22EC44
+P 4900 -2900
+F 0 "J1" H 4900 -2600 50  0000 C CNN
+F 1 "Conn_01x05" H 4900 -3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4900 -2900 50  0001 C CNN
+F 3 "" H 4900 -2900 50  0001 C CNN
+	1    4900 -2900
+	0    -1   1    0   
+$EndComp
+$Comp
+L trimux U3
+U 1 1 5A270FA2
+P 4575 -5975
+F 0 "U3" H 4595 -6085 60  0000 C CNN
+F 1 "trimux" H 4595 -5485 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 4685 -5975 60  0001 C CNN
+F 3 "" H 4685 -5975 60  0001 C CNN
+	1    4575 -5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 5A270FA8
+P 5275 -5975
+F 0 "#PWR010" H 5275 -6125 50  0001 C CNN
+F 1 "+5V" H 5275 -5825 50  0000 C CNN
+F 2 "" H 5275 -5975 50  0000 C CNN
+F 3 "" H 5275 -5975 50  0000 C CNN
+	1    5275 -5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR011
+U 1 1 5A270FAE
+P 4975 -5800
+F 0 "#PWR011" H 5150 -5825 50  0001 C CNN
+F 1 "-5V" H 4950 -5950 50  0000 C CNN
+F 2 "" H 4975 -5800 50  0000 C CNN
+F 3 "" H 4975 -5800 50  0000 C CNN
+	1    4975 -5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR012
+U 1 1 5A270FB4
+P 5150 -5875
+F 0 "#PWR012" H 5150 -6125 50  0001 C CNN
+F 1 "GNDREF" H 5150 -6025 50  0000 C CNN
+F 2 "" H 5150 -5875 50  0000 C CNN
+F 3 "" H 5150 -5875 50  0000 C CNN
+	1    5150 -5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J10
+U 1 1 5A27100D
+P 4875 -2175
+F 0 "J10" H 4875 -1875 50  0000 C CNN
+F 1 "Conn_01x05" H 4875 -2475 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4875 -2175 50  0001 C CNN
+F 3 "" H 4875 -2175 50  0001 C CNN
+	1    4875 -2175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x05 J11
+U 1 1 5A2710FD
+P 4875 -1125
+F 0 "J11" H 4875 -825 50  0000 C CNN
+F 1 "Conn_01x05" H 4875 -1425 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4875 -1125 50  0001 C CNN
+F 3 "" H 4875 -1125 50  0001 C CNN
+	1    4875 -1125
+	0    -1   1    0   
+$EndComp
+Text Label 3900 -1850 0    60   ~ 0
+ENABLE_JMP
+Text Label 4025 -1725 0    60   ~ 0
+ENABLE_SKIP
+Text Label 4225 -1575 0    60   ~ 0
+ENABLE_OPA
+Text Label 4275 -1450 0    60   ~ 0
+ENABLE_COPY
+Text Label 4450 -1350 0    60   ~ 0
+ENABLE_WRT
+$Comp
+L trimux U1
+U 1 1 5A271580
+P 7250 -3900
+F 0 "U1" H 7270 -4010 60  0000 C CNN
+F 1 "trimux" H 7270 -3410 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 7360 -3900 60  0001 C CNN
+F 3 "" H 7360 -3900 60  0001 C CNN
+	1    7250 -3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR013
+U 1 1 5A271586
+P 7950 -3900
+F 0 "#PWR013" H 7950 -4050 50  0001 C CNN
+F 1 "+5V" H 7950 -3750 50  0000 C CNN
+F 2 "" H 7950 -3900 50  0000 C CNN
+F 3 "" H 7950 -3900 50  0000 C CNN
+	1    7950 -3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR014
+U 1 1 5A27158C
+P 7650 -3725
+F 0 "#PWR014" H 7825 -3750 50  0001 C CNN
+F 1 "-5V" H 7625 -3875 50  0000 C CNN
+F 2 "" H 7650 -3725 50  0000 C CNN
+F 3 "" H 7650 -3725 50  0000 C CNN
+	1    7650 -3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR015
+U 1 1 5A271592
+P 7825 -3800
+F 0 "#PWR015" H 7825 -4050 50  0001 C CNN
+F 1 "GNDREF" H 7825 -3950 50  0000 C CNN
+F 2 "" H 7825 -3800 50  0000 C CNN
+F 3 "" H 7825 -3800 50  0000 C CNN
+	1    7825 -3800
+	1    0    0    -1  
+$EndComp
+Text Label 6125 -3800 0    60   ~ 0
+ENABLE_JMP
+$Comp
+L Conn_01x03 J7
+U 1 1 5A271CDA
+P 2975 -2900
+F 0 "J7" H 2975 -2700 50  0000 C CNN
+F 1 "Conn_01x03" H 2975 -3100 50  0000 C CNN
+F 2 "" H 2975 -2900 50  0001 C CNN
+F 3 "" H 2975 -2900 50  0001 C CNN
+	1    2975 -2900
+	-1   0    0    -1  
+$EndComp
+Text Label 3575 -3000 2    60   ~ 0
+MEM_HI
+Text Label 3600 -2900 2    60   ~ 0
+MEM_MI
+Text Label 3575 -2800 2    60   ~ 0
+MEM_LO
+Text Label 6100 -2200 0    60   ~ 0
+ENABLE_JMP
+Text Label 7375 -3325 2    60   ~ 0
+MEM_HI
+Text Label 7875 -3425 2    60   ~ 0
+MEM_MI
+Text Label 6750 -1875 2    60   ~ 0
+MEM_LO
+$Comp
+L trimux U4
+U 1 1 5A2733C4
+P 7150 -700
+F 0 "U4" H 7170 -810 60  0000 C CNN
+F 1 "trimux" H 7170 -210 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 7260 -700 60  0001 C CNN
+F 3 "" H 7260 -700 60  0001 C CNN
+	1    7150 -700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR016
+U 1 1 5A2733CA
+P 7850 -700
+F 0 "#PWR016" H 7850 -850 50  0001 C CNN
+F 1 "+5V" H 7850 -550 50  0000 C CNN
+F 2 "" H 7850 -700 50  0000 C CNN
+F 3 "" H 7850 -700 50  0000 C CNN
+	1    7850 -700
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR017
+U 1 1 5A2733D0
+P 7550 -525
+F 0 "#PWR017" H 7725 -550 50  0001 C CNN
+F 1 "-5V" H 7525 -675 50  0000 C CNN
+F 2 "" H 7550 -525 50  0000 C CNN
+F 3 "" H 7550 -525 50  0000 C CNN
+	1    7550 -525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR018
+U 1 1 5A2733D6
+P 7725 -600
+F 0 "#PWR018" H 7725 -850 50  0001 C CNN
+F 1 "GNDREF" H 7725 -750 50  0000 C CNN
+F 2 "" H 7725 -600 50  0000 C CNN
+F 3 "" H 7725 -600 50  0000 C CNN
+	1    7725 -600
+	1    0    0    -1  
+$EndComp
+Text Label 5675 -550 0    60   ~ 0
+INSTRUCTION_CYCLE
+$Comp
+L R_Small R1
+U 1 1 5A273D0B
+P 7475 -2100
+F 0 "R1" H 7505 -2080 50  0000 L CNN
+F 1 "10k" H 7505 -2140 50  0000 L CNN
+F 2 "" H 7475 -2100 50  0001 C CNN
+F 3 "" H 7475 -2100 50  0001 C CNN
+	1    7475 -2100
+	1    0    0    -1  
+$EndComp
+Text Label 7525 -1725 0    60   ~ 0
+ASSIGN_SIGNAL
+Text Notes 5950 -4750 0    60   ~ 0
+JUMPS
+Text Label 7225 -125 0    60   ~ 0
+ENABLE_WRT
+Text Label 7175 -225 0    60   ~ 0
+COUNTER_CLOCK
+Text Label 8000 -300 0    60   ~ 0
+MEM_CLK
+$Comp
+L trimux U7
+U 1 1 5A279070
+P 9950 -3900
+F 0 "U7" H 9970 -4010 60  0000 C CNN
+F 1 "trimux" H 9970 -3410 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 10060 -3900 60  0001 C CNN
+F 3 "" H 10060 -3900 60  0001 C CNN
+	1    9950 -3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 5A279076
+P 10650 -3900
+F 0 "#PWR019" H 10650 -4050 50  0001 C CNN
+F 1 "+5V" H 10650 -3750 50  0000 C CNN
+F 2 "" H 10650 -3900 50  0000 C CNN
+F 3 "" H 10650 -3900 50  0000 C CNN
+	1    10650 -3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR020
+U 1 1 5A27907C
+P 10350 -3725
+F 0 "#PWR020" H 10525 -3750 50  0001 C CNN
+F 1 "-5V" H 10325 -3875 50  0000 C CNN
+F 2 "" H 10350 -3725 50  0000 C CNN
+F 3 "" H 10350 -3725 50  0000 C CNN
+	1    10350 -3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR021
+U 1 1 5A279082
+P 10525 -3800
+F 0 "#PWR021" H 10525 -4050 50  0001 C CNN
+F 1 "GNDREF" H 10525 -3950 50  0000 C CNN
+F 2 "" H 10525 -3800 50  0000 C CNN
+F 3 "" H 10525 -3800 50  0000 C CNN
+	1    10525 -3800
+	1    0    0    -1  
+$EndComp
+Text Label 8800 -3750 0    60   ~ 0
+ENABLE_WRT
+$Comp
+L trimux U6
+U 1 1 5A2796CA
+P 9900 -2275
+F 0 "U6" H 9920 -2385 60  0000 C CNN
+F 1 "trimux" H 9920 -1785 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 10010 -2275 60  0001 C CNN
+F 3 "" H 10010 -2275 60  0001 C CNN
+	1    9900 -2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR022
+U 1 1 5A2796D0
+P 10600 -2275
+F 0 "#PWR022" H 10600 -2425 50  0001 C CNN
+F 1 "+5V" H 10600 -2125 50  0000 C CNN
+F 2 "" H 10600 -2275 50  0000 C CNN
+F 3 "" H 10600 -2275 50  0000 C CNN
+	1    10600 -2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR023
+U 1 1 5A2796D6
+P 10300 -2100
+F 0 "#PWR023" H 10475 -2125 50  0001 C CNN
+F 1 "-5V" H 10275 -2250 50  0000 C CNN
+F 2 "" H 10300 -2100 50  0000 C CNN
+F 3 "" H 10300 -2100 50  0000 C CNN
+	1    10300 -2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR024
+U 1 1 5A2796DC
+P 10475 -2175
+F 0 "#PWR024" H 10475 -2425 50  0001 C CNN
+F 1 "GNDREF" H 10475 -2325 50  0000 C CNN
+F 2 "" H 10475 -2175 50  0000 C CNN
+F 3 "" H 10475 -2175 50  0000 C CNN
+	1    10475 -2175
+	1    0    0    -1  
+$EndComp
+Text Label 8750 -2125 0    60   ~ 0
+ENABLE_WRT
+$Comp
+L trimux U5
+U 1 1 5A2797EE
+P 9825 -725
+F 0 "U5" H 9845 -835 60  0000 C CNN
+F 1 "trimux" H 9845 -235 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 9935 -725 60  0001 C CNN
+F 3 "" H 9935 -725 60  0001 C CNN
+	1    9825 -725
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR025
+U 1 1 5A2797F4
+P 10525 -725
+F 0 "#PWR025" H 10525 -875 50  0001 C CNN
+F 1 "+5V" H 10525 -575 50  0000 C CNN
+F 2 "" H 10525 -725 50  0000 C CNN
+F 3 "" H 10525 -725 50  0000 C CNN
+	1    10525 -725
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR026
+U 1 1 5A2797FA
+P 10225 -550
+F 0 "#PWR026" H 10400 -575 50  0001 C CNN
+F 1 "-5V" H 10200 -700 50  0000 C CNN
+F 2 "" H 10225 -550 50  0000 C CNN
+F 3 "" H 10225 -550 50  0000 C CNN
+	1    10225 -550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR027
+U 1 1 5A279800
+P 10400 -625
+F 0 "#PWR027" H 10400 -875 50  0001 C CNN
+F 1 "GNDREF" H 10400 -775 50  0000 C CNN
+F 2 "" H 10400 -625 50  0000 C CNN
+F 3 "" H 10400 -625 50  0000 C CNN
+	1    10400 -625
+	1    0    0    -1  
+$EndComp
+Text Label 8750 -575 0    60   ~ 0
+ENABLE_WRT
+Text Label 9950 -3325 0    60   ~ 0
+MEM_HI
+Text Label 9200 -3475 0    60   ~ 0
+OPCODE_4
+Text Label 10275 -3450 0    60   ~ 0
+MEM_MI
+Text Label 8825 -1925 0    60   ~ 0
+OPCODE_3
+Text Label 9725 -1550 0    60   ~ 0
+MEM_LO
+Text Label 9100 -1750 0    60   ~ 0
+OPCODE_2
+Text Label 10250 -1750 0    60   ~ 0
+MEM_A_HI
+Text Label 8800 -400 0    60   ~ 0
+OPCODE_1
+Text Label 9775 -100 0    60   ~ 0
+MEM_A_MI
+Text Label 9050 -250 0    60   ~ 0
+OPCODE_0
+$Comp
+L Conn_01x03 J9
+U 1 1 5A27AC93
+P 2975 -2350
+F 0 "J9" H 2975 -2150 50  0000 C CNN
+F 1 "Conn_01x03" H 2975 -2550 50  0000 C CNN
+F 2 "" H 2975 -2350 50  0001 C CNN
+F 3 "" H 2975 -2350 50  0001 C CNN
+	1    2975 -2350
+	-1   0    0    -1  
+$EndComp
+Text Label 3575 -2450 2    60   ~ 0
+MEM_A_HI
+Text Label 3600 -2350 2    60   ~ 0
+MEM_A_MI
+Text Label 3575 -2250 2    60   ~ 0
+MEM_A_LO
+$Comp
+L Conn_01x03 J3
+U 1 1 5A27AE7A
+P 2750 -1750
+F 0 "J3" H 2750 -1550 50  0000 C CNN
+F 1 "Conn_01x03" H 2750 -1950 50  0000 C CNN
+F 2 "" H 2750 -1750 50  0001 C CNN
+F 3 "" H 2750 -1750 50  0001 C CNN
+	1    2750 -1750
+	-1   0    0    -1  
+$EndComp
+Text Label 3425 -1850 2    60   ~ 0
+MEM_Q_HI
+Text Label 3425 -1750 2    60   ~ 0
+MEM_Q_MI
+Text Label 3425 -1650 2    60   ~ 0
+MEM_Q_LO
+$Comp
+L Conn_01x01 J4
+U 1 1 5A27B001
+P 2750 -1300
+F 0 "J4" H 2750 -1200 50  0000 C CNN
+F 1 "Conn_01x01" H 2750 -1400 50  0000 C CNN
+F 2 "" H 2750 -1300 50  0001 C CNN
+F 3 "" H 2750 -1300 50  0001 C CNN
+	1    2750 -1300
+	-1   0    0    1   
+$EndComp
+Text Label 3525 -1300 2    60   ~ 0
+MEM_CLK
+$Comp
+L Conn_01x01 J2
+U 1 1 5A27B78E
+P 2725 -975
+F 0 "J2" H 2725 -875 50  0000 C CNN
+F 1 "Conn_01x01" H 2725 -1075 50  0000 C CNN
+F 2 "" H 2725 -975 50  0001 C CNN
+F 3 "" H 2725 -975 50  0001 C CNN
+	1    2725 -975
+	-1   0    0    1   
+$EndComp
+Text Label 3950 -975 2    60   ~ 0
+INSTRUCTION_CYCLE
+$Comp
+L Conn_01x01 J5
+U 1 1 5A27BA61
+P 2750 -650
+F 0 "J5" H 2750 -550 50  0000 C CNN
+F 1 "Conn_01x01" H 2750 -750 50  0000 C CNN
+F 2 "" H 2750 -650 50  0001 C CNN
+F 3 "" H 2750 -650 50  0001 C CNN
+	1    2750 -650
+	-1   0    0    1   
+$EndComp
+Text Label 3850 -650 2    60   ~ 0
+ASSIGN_SIGNAL
+$Comp
+L Conn_01x01 J6
+U 1 1 5A27BBC6
+P 2750 -275
+F 0 "J6" H 2750 -175 50  0000 C CNN
+F 1 "Conn_01x01" H 2750 -375 50  0000 C CNN
+F 2 "" H 2750 -275 50  0001 C CNN
+F 3 "" H 2750 -275 50  0001 C CNN
+	1    2750 -275
+	-1   0    0    1   
+$EndComp
+Text Label 3850 -275 2    60   ~ 0
+COUNTER_CLOCK
+NoConn ~ 10025 -3900
+NoConn ~ 10100 -3900
+NoConn ~ 9550 -3900
+NoConn ~ 9625 -3900
+NoConn ~ 7400 -3900
+NoConn ~ 7325 -3900
+NoConn ~ 6925 -3900
+NoConn ~ 6850 -3900
+NoConn ~ 6850 -2300
+NoConn ~ 6925 -2300
+NoConn ~ 7325 -2300
+NoConn ~ 7400 -2300
+NoConn ~ 7225 -700
+NoConn ~ 7300 -700
+NoConn ~ 9425 -725
+NoConn ~ 9500 -725
+NoConn ~ 9900 -725
+NoConn ~ 9975 -725
+NoConn ~ 10050 -2275
+NoConn ~ 9975 -2275
+NoConn ~ 9575 -2275
+NoConn ~ 9500 -2275
+Text Label 10200 -250 0    60   ~ 0
+MEM_A_LO
+Text Notes 8725 -4750 0    60   ~ 0
+WRITE TO R1-R4
+$Comp
+L trimux U8
+U 1 1 5A27E6B6
+P 12425 -3850
+F 0 "U8" H 12445 -3960 60  0000 C CNN
+F 1 "trimux" H 12445 -3360 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 12535 -3850 60  0001 C CNN
+F 3 "" H 12535 -3850 60  0001 C CNN
+	1    12425 -3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR028
+U 1 1 5A27E6BC
+P 13125 -3850
+F 0 "#PWR028" H 13125 -4000 50  0001 C CNN
+F 1 "+5V" H 13125 -3700 50  0000 C CNN
+F 2 "" H 13125 -3850 50  0000 C CNN
+F 3 "" H 13125 -3850 50  0000 C CNN
+	1    13125 -3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR029
+U 1 1 5A27E6C2
+P 12825 -3675
+F 0 "#PWR029" H 13000 -3700 50  0001 C CNN
+F 1 "-5V" H 12800 -3825 50  0000 C CNN
+F 2 "" H 12825 -3675 50  0000 C CNN
+F 3 "" H 12825 -3675 50  0000 C CNN
+	1    12825 -3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR030
+U 1 1 5A27E6C8
+P 13000 -3750
+F 0 "#PWR030" H 13000 -4000 50  0001 C CNN
+F 1 "GNDREF" H 13000 -3900 50  0000 C CNN
+F 2 "" H 13000 -3750 50  0000 C CNN
+F 3 "" H 13000 -3750 50  0000 C CNN
+	1    13000 -3750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12025 -3850
+NoConn ~ 12100 -3850
+NoConn ~ 12500 -3850
+NoConn ~ 12575 -3850
+Text Label 11275 -3725 0    60   ~ 0
+ENABLE_OPA
+Wire Wire Line
+	-2575 -5450 -1600 -5450
+Wire Wire Line
+	-2150 -5450 -2150 -5500
+Wire Wire Line
+	-2575 -5425 -2575 -5450
+Connection ~ -2150 -5450
+Wire Wire Line
+	-2375 -5425 -2375 -5450
+Connection ~ -2375 -5450
+Wire Wire Line
+	-2575 -5225 -2575 -5200
+Wire Wire Line
+	-2450 -5200 -2450 -5175
+Wire Wire Line
+	-2375 -5200 -2375 -5225
+Connection ~ -2450 -5200
+Wire Wire Line
+	-2000 -5350 -1600 -5350
+Connection ~ -2375 -5200
+Wire Wire Line
+	-1600 -5250 -1800 -5250
+Wire Wire Line
+	-1800 -5250 -1800 -4900
+Wire Wire Line
+	-2200 -4950 -2200 -4925
+Wire Wire Line
+	-2200 -4925 -1800 -4925
+Wire Wire Line
+	-2000 -4925 -2000 -4950
+Connection ~ -1800 -4925
+Connection ~ -2000 -4925
+Wire Wire Line
+	-2000 -5350 -2000 -5150
+Connection ~ -2000 -5200
+Wire Wire Line
+	-2200 -5150 -2200 -5200
+Connection ~ -2200 -5200
+Wire Wire Line
+	-2575 -5200 -2000 -5200
+Wire Wire Line
+	-1900 -5475 -1900 -5450
+Connection ~ -1900 -5450
+Wire Wire Line
+	-1750 -5375 -1750 -5350
+Connection ~ -1750 -5350
+Wire Wire Line
+	-1625 -5275 -1625 -5250
+Connection ~ -1625 -5250
+Wire Wire Line
+	3725 -3600 4900 -3600
+Wire Wire Line
+	4700 -3950 4700 -3100
+Wire Wire Line
+	4800 -3950 4800 -3100
+Wire Wire Line
+	4900 -3950 4900 -3100
+Wire Wire Line
+	5000 -3950 5000 -3100
+Wire Wire Line
+	5100 -3950 5100 -3100
+Wire Wire Line
+	7650 -2300 7650 -2125
+Wire Wire Line
+	7725 -2200 7725 -2300
+Wire Wire Line
+	7800 -2300 7800 -2275
+Wire Wire Line
+	6775 -2275 7950 -2275
+Wire Wire Line
+	7950 -2275 7950 -2300
+Connection ~ 5000 -3500
+Connection ~ 5100 -3400
+Wire Wire Line
+	-1600 -6250 -1675 -6250
+Wire Wire Line
+	-1675 -6250 -1675 -5250
+Connection ~ -1675 -5250
+Wire Wire Line
+	-1600 -5750 -1675 -5750
+Connection ~ -1675 -5750
+Wire Wire Line
+	-1600 -6350 -1800 -6350
+Wire Wire Line
+	-1800 -6350 -1800 -5350
+Connection ~ -1800 -5350
+Wire Wire Line
+	-1600 -5850 -1800 -5850
+Connection ~ -1800 -5850
+Wire Wire Line
+	-1600 -6450 -1950 -6450
+Wire Wire Line
+	-1950 -6450 -1950 -5450
+Connection ~ -1950 -5450
+Wire Wire Line
+	-1600 -5950 -1950 -5950
+Connection ~ -1950 -5950
+Wire Wire Line
+	4700 -3800 3575 -3800
+Wire Wire Line
+	4800 -3700 3625 -3700
+Connection ~ 4700 -3800
+Connection ~ 4800 -3700
+Connection ~ 4900 -3600
+Wire Wire Line
+	7725 -2200 7825 -2200
+Wire Wire Line
+	4975 -5975 4975 -5800
+Wire Wire Line
+	5050 -5875 5050 -5975
+Wire Wire Line
+	5125 -5975 5125 -5950
+Wire Wire Line
+	5125 -5950 5275 -5950
+Wire Wire Line
+	5275 -5950 5275 -5975
+Wire Wire Line
+	5050 -5875 5150 -5875
+Wire Wire Line
+	4675 -1975 4675 -1325
+Wire Wire Line
+	4775 -1325 4775 -1975
+Wire Wire Line
+	4875 -1975 4875 -1325
+Wire Wire Line
+	4975 -1325 4975 -1975
+Wire Wire Line
+	5075 -1975 5075 -1325
+Wire Wire Line
+	5000 -3500 3850 -3500
+Wire Wire Line
+	5100 -3400 3975 -3400
+Wire Wire Line
+	4675 -1850 3825 -1850
+Connection ~ 4675 -1850
+Wire Wire Line
+	4775 -1725 3950 -1725
+Connection ~ 4775 -1725
+Wire Wire Line
+	4875 -1575 4125 -1575
+Connection ~ 4875 -1575
+Wire Wire Line
+	4975 -1450 4250 -1450
+Wire Wire Line
+	4250 -1450 4250 -1425
+Connection ~ 4975 -1450
+Wire Wire Line
+	5075 -1350 4375 -1350
+Wire Wire Line
+	4375 -1350 4375 -1325
+Connection ~ 5075 -1350
+Wire Wire Line
+	7650 -3900 7650 -3725
+Wire Wire Line
+	7725 -3800 7725 -3900
+Wire Wire Line
+	7800 -3900 7800 -3875
+Wire Wire Line
+	6775 -3875 7950 -3875
+Wire Wire Line
+	7950 -3875 7950 -3900
+Wire Wire Line
+	7725 -3800 7825 -3800
+Wire Wire Line
+	6775 -3875 6775 -3900
+Connection ~ 7800 -3875
+Wire Wire Line
+	6700 -3900 6700 -3800
+Wire Wire Line
+	3650 -3000 3175 -3000
+Wire Wire Line
+	3175 -2900 3650 -2900
+Wire Wire Line
+	3650 -2800 3175 -2800
+Wire Wire Line
+	7000 -3900 7000 -3325
+Wire Wire Line
+	6075 -3800 7175 -3800
+Wire Wire Line
+	7250 -3900 7250 -3875
+Connection ~ 7250 -3875
+Wire Wire Line
+	7175 -3800 7175 -3900
+Connection ~ 6700 -3800
+Wire Wire Line
+	7475 -3900 7475 -3425
+Wire Wire Line
+	7475 -3425 7975 -3425
+Wire Wire Line
+	7000 -3325 7975 -3325
+Wire Wire Line
+	6700 -2300 6700 -2200
+Wire Wire Line
+	6075 -2200 7175 -2200
+Wire Wire Line
+	7175 -2200 7175 -2300
+Connection ~ 6700 -2200
+Wire Wire Line
+	6775 -2300 6775 -2275
+Connection ~ 7800 -2275
+Wire Wire Line
+	7000 -2300 7000 -1875
+Wire Wire Line
+	7000 -1875 6300 -1875
+Wire Wire Line
+	7550 -700 7550 -525
+Wire Wire Line
+	7625 -600 7625 -700
+Wire Wire Line
+	7700 -700 7700 -675
+Wire Wire Line
+	7700 -675 7850 -675
+Wire Wire Line
+	7850 -675 7850 -700
+Wire Wire Line
+	6750 -600 7725 -600
+Wire Wire Line
+	6750 -700 6750 -600
+Connection ~ 7625 -600
+Connection ~ 7550 -550
+Wire Wire Line
+	6600 -700 6600 -550
+Wire Wire Line
+	6600 -550 5650 -550
+Wire Wire Line
+	6900 -700 6900 -350
+Wire Wire Line
+	6900 -350 6150 -350
+Wire Wire Line
+	6150 -350 6150 -1725
+Wire Wire Line
+	6150 -1725 7250 -1725
+Wire Wire Line
+	7250 -1725 7250 -2300
+Wire Wire Line
+	7475 -2300 7475 -2200
+Wire Wire Line
+	7475 -2000 7475 -1725
+Wire Notes Line
+	5850 -4875 8475 -4875
+Wire Notes Line
+	8475 -4875 8475 -1575
+Wire Notes Line
+	8475 -1575 7000 -1575
+Wire Notes Line
+	7000 -1575 7000 -125
+Wire Notes Line
+	7000 -125 5850 -125
+Wire Notes Line
+	5850 -125 5850 -4875
+Wire Wire Line
+	7075 -700 7075 -125
+Wire Wire Line
+	7075 -125 7875 -125
+Wire Wire Line
+	7150 -700 7150 -225
+Wire Wire Line
+	7150 -225 7900 -225
+Wire Wire Line
+	7375 -700 7375 -300
+Wire Wire Line
+	7375 -300 8625 -300
+Wire Wire Line
+	10350 -3900 10350 -3725
+Wire Wire Line
+	10425 -3800 10425 -3900
+Wire Wire Line
+	10500 -3900 10500 -3875
+Wire Wire Line
+	10500 -3875 10650 -3875
+Wire Wire Line
+	10650 -3875 10650 -3900
+Wire Wire Line
+	9475 -3800 10525 -3800
+Wire Wire Line
+	9400 -3900 9400 -3750
+Wire Wire Line
+	8725 -3750 9875 -3750
+Wire Wire Line
+	9875 -3750 9875 -3900
+Connection ~ 9400 -3750
+Wire Wire Line
+	10300 -2275 10300 -2100
+Wire Wire Line
+	10375 -2175 10375 -2275
+Wire Wire Line
+	10450 -2275 10450 -2250
+Wire Wire Line
+	10450 -2250 10600 -2250
+Wire Wire Line
+	10600 -2250 10600 -2275
+Wire Wire Line
+	10375 -2175 10475 -2175
+Wire Wire Line
+	9350 -2275 9350 -2125
+Wire Wire Line
+	8675 -2125 9825 -2125
+Wire Wire Line
+	9825 -2125 9825 -2275
+Connection ~ 9350 -2125
+Wire Wire Line
+	10225 -725 10225 -550
+Wire Wire Line
+	10300 -625 10300 -725
+Wire Wire Line
+	10375 -725 10375 -700
+Wire Wire Line
+	10375 -700 10525 -700
+Wire Wire Line
+	10525 -700 10525 -725
+Wire Wire Line
+	10300 -625 10400 -625
+Wire Wire Line
+	9275 -725 9275 -575
+Wire Wire Line
+	8600 -575 9750 -575
+Wire Wire Line
+	9750 -575 9750 -725
+Connection ~ 9275 -575
+Wire Wire Line
+	9475 -3900 9475 -3800
+Connection ~ 10425 -3800
+Wire Wire Line
+	9700 -3900 9700 -3325
+Wire Wire Line
+	9700 -3325 10450 -3325
+Wire Wire Line
+	10175 -3900 10175 -3450
+Wire Wire Line
+	10175 -3450 10775 -3450
+Wire Wire Line
+	9950 -3900 9950 -3475
+Wire Wire Line
+	9950 -3475 9125 -3475
+Wire Wire Line
+	9425 -2275 9425 -1925
+Wire Wire Line
+	9425 -1925 8750 -1925
+Wire Wire Line
+	9650 -2275 9650 -1550
+Wire Wire Line
+	9650 -1550 10650 -1550
+Wire Wire Line
+	9900 -2275 9900 -1750
+Wire Wire Line
+	9900 -1750 8950 -1750
+Wire Wire Line
+	10125 -2275 10125 -1750
+Wire Wire Line
+	10125 -1750 10800 -1750
+Wire Wire Line
+	9350 -725 9350 -400
+Wire Wire Line
+	9350 -400 8725 -400
+Wire Wire Line
+	9575 -725 9575 -100
+Wire Wire Line
+	9575 -100 10800 -100
+Wire Wire Line
+	9825 -725 9825 -250
+Wire Wire Line
+	9825 -250 8925 -250
+Wire Wire Line
+	10050 -725 10050 -250
+Wire Wire Line
+	10050 -250 10825 -250
+Wire Wire Line
+	3650 -2450 3175 -2450
+Wire Wire Line
+	3175 -2350 3650 -2350
+Wire Wire Line
+	3650 -2250 3175 -2250
+Wire Wire Line
+	3425 -1850 2950 -1850
+Wire Wire Line
+	2950 -1750 3425 -1750
+Wire Wire Line
+	3425 -1650 2950 -1650
+Wire Wire Line
+	2950 -1300 3600 -1300
+Wire Wire Line
+	2925 -975 4150 -975
+Wire Wire Line
+	2950 -650 4175 -650
+Wire Wire Line
+	2950 -275 4175 -275
+Wire Notes Line
+	8625 -4875 8625 -1525
+Wire Notes Line
+	8625 -1525 7050 -1525
+Wire Notes Line
+	7050 -1525 7050 -50 
+Wire Notes Line
+	7050 -50  11075 -50 
+Wire Notes Line
+	11075 -50  11075 -4875
+Wire Notes Line
+	11075 -4875 8625 -4875
+Wire Wire Line
+	12825 -3850 12825 -3675
+Wire Wire Line
+	12900 -3750 12900 -3850
+Wire Wire Line
+	12975 -3850 12975 -3825
+Wire Wire Line
+	12975 -3825 13125 -3825
+Wire Wire Line
+	13125 -3825 13125 -3850
+Wire Wire Line
+	11950 -3750 13000 -3750
+Wire Wire Line
+	11875 -3850 11875 -3725
+Wire Wire Line
+	11225 -3725 12350 -3725
+Wire Wire Line
+	12350 -3725 12350 -3850
+Connection ~ 11875 -3725
+Wire Wire Line
+	11950 -3850 11950 -3750
+Connection ~ 12900 -3750
+Wire Wire Line
+	12425 -3850 12425 -3750
+Connection ~ 12425 -3750
+Wire Wire Line
+	12175 -3850 12175 -3550
+Wire Wire Line
+	12175 -3550 11450 -3550
+Wire Wire Line
+	12650 -3850 12650 -3375
+Wire Wire Line
+	12650 -3375 13225 -3375
+Text Label 11625 -3550 0    60   ~ 0
+MEM_HI
+Text Label 12750 -3375 0    60   ~ 0
+MEM_MI
+$Comp
+L trimux U9
+U 1 1 5A27F4BC
+P 12450 -2300
+F 0 "U9" H 12470 -2410 60  0000 C CNN
+F 1 "trimux" H 12470 -1810 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 12560 -2300 60  0001 C CNN
+F 3 "" H 12560 -2300 60  0001 C CNN
+	1    12450 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR031
+U 1 1 5A27F4C2
+P 13150 -2300
+F 0 "#PWR031" H 13150 -2450 50  0001 C CNN
+F 1 "+5V" H 13150 -2150 50  0000 C CNN
+F 2 "" H 13150 -2300 50  0000 C CNN
+F 3 "" H 13150 -2300 50  0000 C CNN
+	1    13150 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR032
+U 1 1 5A27F4C8
+P 12850 -2125
+F 0 "#PWR032" H 13025 -2150 50  0001 C CNN
+F 1 "-5V" H 12825 -2275 50  0000 C CNN
+F 2 "" H 12850 -2125 50  0000 C CNN
+F 3 "" H 12850 -2125 50  0000 C CNN
+	1    12850 -2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR033
+U 1 1 5A27F4CE
+P 13025 -2200
+F 0 "#PWR033" H 13025 -2450 50  0001 C CNN
+F 1 "GNDREF" H 13025 -2350 50  0000 C CNN
+F 2 "" H 13025 -2200 50  0000 C CNN
+F 3 "" H 13025 -2200 50  0000 C CNN
+	1    13025 -2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12050 -2300
+NoConn ~ 12125 -2300
+Text Label 11300 -2175 0    60   ~ 0
+ENABLE_OPA
+Wire Wire Line
+	12850 -2300 12850 -2125
+Wire Wire Line
+	12925 -2200 12925 -2300
+Wire Wire Line
+	13000 -2300 13000 -2275
+Wire Wire Line
+	11975 -2275 13150 -2275
+Wire Wire Line
+	13150 -2275 13150 -2300
+Wire Wire Line
+	11900 -2300 11900 -2175
+Text Label 11650 -2075 0    60   ~ 0
+MEM_LO
+Wire Wire Line
+	11900 -2175 11250 -2175
+Wire Wire Line
+	12925 -2200 13025 -2200
+Wire Wire Line
+	11975 -2300 11975 -2275
+Connection ~ 13000 -2275
+Wire Wire Line
+	12450 -1800 12450 -2300
+Wire Wire Line
+	11775 -1800 12450 -1800
+Wire Wire Line
+	12525 -2300 12525 -1675
+Wire Wire Line
+	12525 -1675 11775 -1675
+Wire Wire Line
+	12600 -2300 12600 -1575
+Wire Wire Line
+	12600 -1575 11775 -1575
+Text Label 11850 -1800 0    60   ~ 0
+OPCODE_0
+Text Label 11850 -1675 0    60   ~ 0
+OPCODE_1
+Text Label 11850 -1575 0    60   ~ 0
+OPCODE_2
+Wire Wire Line
+	12200 -2300 12200 -2075
+Wire Wire Line
+	12200 -2075 11525 -2075
+Wire Wire Line
+	12375 -2300 12375 -1925
+Text Label 12300 -1925 2    60   ~ 0
+MEM_Q_HI
+Wire Wire Line
+	12375 -1925 11775 -1925
+$Comp
+L trimux U10
+U 1 1 5A28154A
+P 12325 -700
+F 0 "U10" H 12345 -810 60  0000 C CNN
+F 1 "trimux" H 12345 -210 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 12435 -700 60  0001 C CNN
+F 3 "" H 12435 -700 60  0001 C CNN
+	1    12325 -700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR034
+U 1 1 5A281550
+P 13025 -700
+F 0 "#PWR034" H 13025 -850 50  0001 C CNN
+F 1 "+5V" H 13025 -550 50  0000 C CNN
+F 2 "" H 13025 -700 50  0000 C CNN
+F 3 "" H 13025 -700 50  0000 C CNN
+	1    13025 -700
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR035
+U 1 1 5A281556
+P 12725 -525
+F 0 "#PWR035" H 12900 -550 50  0001 C CNN
+F 1 "-5V" H 12700 -675 50  0000 C CNN
+F 2 "" H 12725 -525 50  0000 C CNN
+F 3 "" H 12725 -525 50  0000 C CNN
+	1    12725 -525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR036
+U 1 1 5A28155C
+P 12900 -600
+F 0 "#PWR036" H 12900 -850 50  0001 C CNN
+F 1 "GNDREF" H 12900 -750 50  0000 C CNN
+F 2 "" H 12900 -600 50  0000 C CNN
+F 3 "" H 12900 -600 50  0000 C CNN
+	1    12900 -600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12725 -700 12725 -525
+Wire Wire Line
+	12800 -600 12800 -700
+Wire Wire Line
+	12875 -700 12875 -675
+Wire Wire Line
+	13025 -675 13025 -700
+Wire Wire Line
+	12800 -600 12900 -600
+Wire Wire Line
+	12325 -200 12325 -700
+Wire Wire Line
+	11200 -200 12325 -200
+Wire Wire Line
+	12400 -75  12400 -700
+Wire Wire Line
+	11200 -75  12400 -75 
+Wire Wire Line
+	12475 25   12475 -700
+Wire Wire Line
+	11200 25   12475 25  
+Text Label 11325 -200 0    60   ~ 0
+OPCODE_0
+Text Label 11325 -75  0    60   ~ 0
+OPCODE_1
+Text Label 11325 25   0    60   ~ 0
+OPCODE_2
+Wire Wire Line
+	12250 -325 12250 -700
+Text Label 11775 -325 2    60   ~ 0
+MEM_Q_LO
+Wire Wire Line
+	11200 -325 12250 -325
+Wire Wire Line
+	12875 -675 13025 -675
+Wire Wire Line
+	11775 -700 11775 -450
+Wire Wire Line
+	11775 -450 11200 -450
+Text Label 11700 -450 2    60   ~ 0
+MEM_Q_MI
+Wire Wire Line
+	11850 -700 11850 -200
+Connection ~ 11850 -200
+Wire Wire Line
+	11925 -700 11925 -75 
+Connection ~ 11925 -75 
+Wire Wire Line
+	12000 -700 12000 25  
+Connection ~ 12000 25  
+$Comp
+L trimux U12
+U 1 1 5A2830D9
+P 14675 -2300
+F 0 "U12" H 14695 -2410 60  0000 C CNN
+F 1 "trimux" H 14695 -1810 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 14785 -2300 60  0001 C CNN
+F 3 "" H 14785 -2300 60  0001 C CNN
+	1    14675 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR037
+U 1 1 5A2830DF
+P 15375 -2300
+F 0 "#PWR037" H 15375 -2450 50  0001 C CNN
+F 1 "+5V" H 15375 -2150 50  0000 C CNN
+F 2 "" H 15375 -2300 50  0000 C CNN
+F 3 "" H 15375 -2300 50  0000 C CNN
+	1    15375 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR038
+U 1 1 5A2830E5
+P 15075 -2125
+F 0 "#PWR038" H 15250 -2150 50  0001 C CNN
+F 1 "-5V" H 15050 -2275 50  0000 C CNN
+F 2 "" H 15075 -2125 50  0000 C CNN
+F 3 "" H 15075 -2125 50  0000 C CNN
+	1    15075 -2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR039
+U 1 1 5A2830EB
+P 15250 -2200
+F 0 "#PWR039" H 15250 -2450 50  0001 C CNN
+F 1 "GNDREF" H 15250 -2350 50  0000 C CNN
+F 2 "" H 15250 -2200 50  0000 C CNN
+F 3 "" H 15250 -2200 50  0000 C CNN
+	1    15250 -2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15075 -2300 15075 -2125
+Wire Wire Line
+	15150 -2200 15150 -2300
+Wire Wire Line
+	15225 -2300 15225 -2275
+Wire Wire Line
+	15225 -2275 15375 -2275
+Wire Wire Line
+	15375 -2275 15375 -2300
+Wire Wire Line
+	15150 -2200 15250 -2200
+Text Label 13525 -2200 0    60   ~ 0
+ENABLE_OPA
+Wire Wire Line
+	14125 -2200 14125 -2300
+NoConn ~ 14275 -2300
+NoConn ~ 14350 -2300
+Wire Wire Line
+	12675 -2300 12675 -1875
+Wire Wire Line
+	12675 -1875 14200 -1875
+Wire Wire Line
+	14200 -1875 14200 -2300
+$Comp
+L trimux U11
+U 1 1 5A283CC8
+P 14550 -725
+F 0 "U11" H 14570 -835 60  0000 C CNN
+F 1 "trimux" H 14570 -235 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 14660 -725 60  0001 C CNN
+F 3 "" H 14660 -725 60  0001 C CNN
+	1    14550 -725
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR040
+U 1 1 5A283CCE
+P 15250 -725
+F 0 "#PWR040" H 15250 -875 50  0001 C CNN
+F 1 "+5V" H 15250 -575 50  0000 C CNN
+F 2 "" H 15250 -725 50  0000 C CNN
+F 3 "" H 15250 -725 50  0000 C CNN
+	1    15250 -725
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR041
+U 1 1 5A283CD4
+P 14950 -550
+F 0 "#PWR041" H 15125 -575 50  0001 C CNN
+F 1 "-5V" H 14925 -700 50  0000 C CNN
+F 2 "" H 14950 -550 50  0000 C CNN
+F 3 "" H 14950 -550 50  0000 C CNN
+	1    14950 -550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR042
+U 1 1 5A283CDA
+P 15125 -625
+F 0 "#PWR042" H 15125 -875 50  0001 C CNN
+F 1 "GNDREF" H 15125 -775 50  0000 C CNN
+F 2 "" H 15125 -625 50  0000 C CNN
+F 3 "" H 15125 -625 50  0000 C CNN
+	1    15125 -625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14950 -725 14950 -550
+Wire Wire Line
+	15025 -625 15025 -725
+Wire Wire Line
+	15100 -725 15100 -700
+Wire Wire Line
+	15100 -700 15250 -700
+Wire Wire Line
+	15250 -700 15250 -725
+Wire Wire Line
+	15025 -625 15125 -625
+Text Label 13400 -625 0    60   ~ 0
+ENABLE_OPA
+Wire Wire Line
+	14000 -625 14000 -725
+Wire Wire Line
+	14475 -625 14475 -725
+Connection ~ 14000 -625
+Wire Wire Line
+	13350 -625 14475 -625
+NoConn ~ 14150 -725
+NoConn ~ 14225 -725
+NoConn ~ 14625 -725
+NoConn ~ 14700 -725
+Wire Wire Line
+	13475 -2200 14125 -2200
+Wire Wire Line
+	14425 -2300 14425 -1725
+Wire Wire Line
+	14425 -1725 13275 -1725
+Text Label 13925 -1725 2    60   ~ 0
+MEM_A_HI
+Wire Wire Line
+	12075 -700 12075 125 
+Wire Wire Line
+	12075 125  14075 125 
+Wire Wire Line
+	14075 125  14075 -725
+Wire Wire Line
+	12550 -700 12550 25  
+Wire Wire Line
+	12550 25   14550 25  
+Wire Wire Line
+	14550 25   14550 -725
+Wire Wire Line
+	14300 -725 14300 -425
+Wire Wire Line
+	14300 -425 13350 -425
+Wire Wire Line
+	14775 -725 14775 -200
+Wire Wire Line
+	14775 -200 13350 -200
+Text Label 13875 -425 2    60   ~ 0
+MEM_A_MI
+Text Label 13875 -200 2    60   ~ 0
+MEM_A_LO
+$Comp
+L trimux U13
+U 1 1 5A2858A5
+P 14675 -3850
+F 0 "U13" H 14695 -3960 60  0000 C CNN
+F 1 "trimux" H 14695 -3360 60  0000 C CNN
+F 2 "trimux:trimux1x15_2.54" H 14785 -3850 60  0001 C CNN
+F 3 "" H 14785 -3850 60  0001 C CNN
+	1    14675 -3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR043
+U 1 1 5A2858AB
+P 15375 -3850
+F 0 "#PWR043" H 15375 -4000 50  0001 C CNN
+F 1 "+5V" H 15375 -3700 50  0000 C CNN
+F 2 "" H 15375 -3850 50  0000 C CNN
+F 3 "" H 15375 -3850 50  0000 C CNN
+	1    15375 -3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR044
+U 1 1 5A2858B1
+P 15075 -3675
+F 0 "#PWR044" H 15250 -3700 50  0001 C CNN
+F 1 "-5V" H 15050 -3825 50  0000 C CNN
+F 2 "" H 15075 -3675 50  0000 C CNN
+F 3 "" H 15075 -3675 50  0000 C CNN
+	1    15075 -3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR045
+U 1 1 5A2858B7
+P 15250 -3750
+F 0 "#PWR045" H 15250 -4000 50  0001 C CNN
+F 1 "GNDREF" H 15250 -3900 50  0000 C CNN
+F 2 "" H 15250 -3750 50  0000 C CNN
+F 3 "" H 15250 -3750 50  0000 C CNN
+	1    15250 -3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15075 -3850 15075 -3675
+Wire Wire Line
+	15150 -3750 15150 -3850
+Wire Wire Line
+	15225 -3850 15225 -3825
+Wire Wire Line
+	15225 -3825 15375 -3825
+Wire Wire Line
+	15375 -3825 15375 -3850
+Wire Wire Line
+	15150 -3750 15250 -3750
+Wire Wire Line
+	14125 -3850 14125 -3175
+Wire Wire Line
+	14600 -3850 14600 -3375
+Text Label 14175 -3175 0    60   ~ 0
+INSTRUCTION_CYCLE
+Wire Wire Line
+	14600 -3375 15325 -3375
+Text Label 14675 -3375 0    60   ~ 0
+ENABLE_OPA
+Wire Wire Line
+	14350 -3850 14350 -3275
+Wire Wire Line
+	14350 -3275 15375 -3275
+Wire Wire Line
+	14125 -3175 15325 -3175
+Text Label 14400 -3275 0    60   ~ 0
+COUNTER_CLOCK
+Wire Wire Line
+	14425 -3850 14425 -3775
+Wire Wire Line
+	14425 -3775 14675 -3775
+Wire Wire Line
+	14675 -3775 14675 -3850
+NoConn ~ 14825 -3850
+NoConn ~ 14750 -3850
+NoConn ~ 14275 -3850
+NoConn ~ 14200 -3850
+Wire Wire Line
+	14900 -3850 14900 -3475
+Text Label 15375 -3475 0    60   ~ 0
+MEM_CLK
+Wire Wire Line
+	14900 -3475 15800 -3475
+Wire Notes Line
+	11175 -4875 11175 250 
+Wire Notes Line
+	11175 250  15925 250 
+Wire Notes Line
+	15925 250  15925 -4875
+Wire Notes Line
+	15925 -4875 11175 -4875
+Text Notes 11300 -4725 0    60   ~ 0
+OPA
+NoConn ~ 6825 -700
+NoConn ~ 6675 -700
+Wire Wire Line
+	7475 -1725 8275 -1725
+$EndSCHEMATC
