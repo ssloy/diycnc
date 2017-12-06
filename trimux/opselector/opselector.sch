@@ -401,39 +401,6 @@ Text Label -1425 -3225 0    60   ~ 0
 SEGMENT_MI
 Text Label -1375 -3325 0    60   ~ 0
 SEGMENT_LO
-$Comp
-L R_Small R1
-U 1 1 5A1F4E37
-P -1425 -2975
-F 0 "R1" H -1395 -2955 50  0000 L CNN
-F 1 "100k" H -1395 -3015 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" H -1425 -2975 50  0001 C CNN
-F 3 "" H -1425 -2975 50  0001 C CNN
-	1    -1425 -2975
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R2
-U 1 1 5A1F4FBB
-P -1125 -2975
-F 0 "R2" H -1095 -2955 50  0000 L CNN
-F 1 "100k" H -1095 -3015 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" H -1125 -2975 50  0001 C CNN
-F 3 "" H -1125 -2975 50  0001 C CNN
-	1    -1125 -2975
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDREF #PWR016
-U 1 1 5A1F502F
-P -1275 -2825
-F 0 "#PWR016" H -1275 -3075 50  0001 C CNN
-F 1 "GNDREF" H -1275 -2975 50  0000 C CNN
-F 2 "" H -1275 -2825 50  0000 C CNN
-F 3 "" H -1275 -2825 50  0000 C CNN
-	1    -1275 -2825
-	1    0    0    -1  
-$EndComp
 Text Label 4075 -3800 0    60   ~ 0
 OPCODE_0
 Text Label 4075 -3700 0    60   ~ 0
@@ -522,10 +489,10 @@ F 3 "" H -1200 -850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -5V #PWR017
+L -5V #PWR016
 U 1 1 5A1F89D7
 P -1825 -600
-F 0 "#PWR017" H -1650 -625 50  0001 C CNN
+F 0 "#PWR016" H -1650 -625 50  0001 C CNN
 F 1 "-5V" H -1850 -750 50  0000 C CNN
 F 2 "" H -1825 -600 50  0000 C CNN
 F 3 "" H -1825 -600 50  0000 C CNN
@@ -535,35 +502,24 @@ $EndComp
 $Comp
 L R_Small R10
 U 1 1 5A1FA928
-P -500 1500
-F 0 "R10" H -470 1520 50  0000 L CNN
-F 1 "100k" H -470 1460 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" H -500 1500 50  0001 C CNN
-F 3 "" H -500 1500 50  0001 C CNN
-	1    -500 1500
+P 700 1450
+F 0 "R10" H 730 1470 50  0000 L CNN
+F 1 "100k" H 730 1410 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 700 1450 50  0001 C CNN
+F 3 "" H 700 1450 50  0001 C CNN
+	1    700  1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L R_Small R9
 U 1 1 5A1FAA16
-P -500 1025
-F 0 "R9" H -470 1045 50  0000 L CNN
-F 1 "100k" H -470 985 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" H -500 1025 50  0001 C CNN
-F 3 "" H -500 1025 50  0001 C CNN
-	1    -500 1025
+P -250 1550
+F 0 "R9" H -220 1570 50  0000 L CNN
+F 1 "1k" H -220 1510 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H -250 1550 50  0001 C CNN
+F 3 "" H -250 1550 50  0001 C CNN
+	1    -250 1550
 	1    0    0    -1  
-$EndComp
-$Comp
-L SW_SPDT SW1
-U 1 1 5A1FAAFB
-P -75 1275
-F 0 "SW1" H -75 1445 50  0000 C CNN
-F 1 "SW_SPDT" H -75 1075 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H -75 1275 50  0001 C CNN
-F 3 "" H -75 1275 50  0001 C CNN
-	1    -75  1275
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x02 J10
@@ -577,28 +533,28 @@ F 3 "" H 1125 975 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L -5V #PWR018
+L -5V #PWR017
 U 1 1 5A1FC313
-P -500 1675
-F 0 "#PWR018" H -325 1650 50  0001 C CNN
-F 1 "-5V" H -525 1525 50  0000 C CNN
-F 2 "" H -500 1675 50  0000 C CNN
-F 3 "" H -500 1675 50  0000 C CNN
-	1    -500 1675
+P 700 1625
+F 0 "#PWR017" H 875 1600 50  0001 C CNN
+F 1 "-5V" H 675 1475 50  0000 C CNN
+F 2 "" H 700 1625 50  0000 C CNN
+F 3 "" H 700 1625 50  0000 C CNN
+	1    700  1625
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR019
+L +5V #PWR018
 U 1 1 5A1FC68E
-P -500 850
-F 0 "#PWR019" H -500 700 50  0001 C CNN
-F 1 "+5V" H -500 1000 50  0000 C CNN
-F 2 "" H -500 850 50  0000 C CNN
-F 3 "" H -500 850 50  0000 C CNN
-	1    -500 850 
+P -250 1375
+F 0 "#PWR018" H -250 1225 50  0001 C CNN
+F 1 "+5V" H -250 1525 50  0000 C CNN
+F 2 "" H -250 1375 50  0000 C CNN
+F 3 "" H -250 1375 50  0000 C CNN
+	1    -250 1375
 	1    0    0    -1  
 $EndComp
-Text Label 150  1275 0    60   ~ 0
+Text Label 200  1275 0    60   ~ 0
 RESET_COUNTER
 $Comp
 L Conn_01x01 J9
@@ -625,10 +581,10 @@ F 3 "" H 4835 1000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR020
+L +5V #PWR019
 U 1 1 5A200CEA
 P 5425 1000
-F 0 "#PWR020" H 5425 850 50  0001 C CNN
+F 0 "#PWR019" H 5425 850 50  0001 C CNN
 F 1 "+5V" H 5425 1150 50  0000 C CNN
 F 2 "" H 5425 1000 50  0000 C CNN
 F 3 "" H 5425 1000 50  0000 C CNN
@@ -636,10 +592,10 @@ F 3 "" H 5425 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -5V #PWR021
+L -5V #PWR020
 U 1 1 5A200CF0
 P 4725 1375
-F 0 "#PWR021" H 4900 1350 50  0001 C CNN
+F 0 "#PWR020" H 4900 1350 50  0001 C CNN
 F 1 "-5V" H 4700 1225 50  0000 C CNN
 F 2 "" H 4725 1375 50  0000 C CNN
 F 3 "" H 4725 1375 50  0000 C CNN
@@ -647,10 +603,10 @@ F 3 "" H 4725 1375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDREF #PWR022
+L GNDREF #PWR021
 U 1 1 5A200CF6
 P 4800 1525
-F 0 "#PWR022" H 4800 1275 50  0001 C CNN
+F 0 "#PWR021" H 4800 1275 50  0001 C CNN
 F 1 "GNDREF" H 4800 1375 50  0000 C CNN
 F 2 "" H 4800 1525 50  0000 C CNN
 F 3 "" H 4800 1525 50  0000 C CNN
@@ -669,10 +625,10 @@ F 3 "" H 2760 2075 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR023
+L +5V #PWR022
 U 1 1 5A204268
 P 3350 2075
-F 0 "#PWR023" H 3350 1925 50  0001 C CNN
+F 0 "#PWR022" H 3350 1925 50  0001 C CNN
 F 1 "+5V" H 3350 2225 50  0000 C CNN
 F 2 "" H 3350 2075 50  0000 C CNN
 F 3 "" H 3350 2075 50  0000 C CNN
@@ -680,10 +636,10 @@ F 3 "" H 3350 2075 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -5V #PWR024
+L -5V #PWR023
 U 1 1 5A20426E
 P 2875 2500
-F 0 "#PWR024" H 3050 2475 50  0001 C CNN
+F 0 "#PWR023" H 3050 2475 50  0001 C CNN
 F 1 "-5V" H 2850 2350 50  0000 C CNN
 F 2 "" H 2875 2500 50  0000 C CNN
 F 3 "" H 2875 2500 50  0000 C CNN
@@ -691,10 +647,10 @@ F 3 "" H 2875 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDREF #PWR025
+L GNDREF #PWR024
 U 1 1 5A204274
 P 3225 2175
-F 0 "#PWR025" H 3225 1925 50  0001 C CNN
+F 0 "#PWR024" H 3225 1925 50  0001 C CNN
 F 1 "GNDREF" H 3225 2025 50  0000 C CNN
 F 2 "" H 3225 2175 50  0000 C CNN
 F 3 "" H 3225 2175 50  0000 C CNN
@@ -747,6 +703,45 @@ F 3 "" H -900 -1175 50  0001 C CNN
 	1    -900 -1175
 	1    0    0    1   
 $EndComp
+$Comp
+L Conn_01x02 J13
+U 1 1 5A2065E5
+P 1125 2625
+F 0 "J13" H 1125 2725 50  0000 C CNN
+F 1 "Conn_01x02" H 1125 2425 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1125 2625 50  0001 C CNN
+F 3 "" H 1125 2625 50  0001 C CNN
+	1    1125 2625
+	0    1    1    0   
+$EndComp
+Text Notes 3250 -5175 0    60   ~ 0
+5 multiplexers 1:3 to select the right segment
+Text Notes 7425 -1350 0    60   ~ 0
+Reset circuit
+Text Label 1875 150  0    60   ~ 0
+BLOCK_NEGATIVE_CLK
+NoConn ~ -825 -3225
+NoConn ~ -825 -3125
+NoConn ~ 175  -1675
+NoConn ~ 175  -1575
+NoConn ~ 150  -2625
+NoConn ~ 150  -2725
+NoConn ~ 150  -3700
+NoConn ~ 150  -3800
+NoConn ~ -4375 -7225
+$Comp
+L SW_Push_Dual SW2
+U 1 1 5A2862BD
+P -25 1750
+F 0 "SW2" H 25  1850 50  0000 L CNN
+F 1 "SW_Push_Dual" H -25 1480 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h13mm" H -25 1950 50  0001 C CNN
+F 3 "" H -25 1950 50  0001 C CNN
+	1    -25  1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 175  1950
+NoConn ~ -225 1950
 Wire Wire Line
 	-2575 -5450 -1600 -5450
 Wire Wire Line
@@ -961,22 +956,9 @@ Wire Wire Line
 	-500 -1775 175  -1775
 Connection ~ -500 -2825
 Wire Wire Line
-	-1425 -2875 -1425 -2850
+	-1500 -3125 -825 -3125
 Wire Wire Line
-	-1425 -2850 -1125 -2850
-Wire Wire Line
-	-1125 -2850 -1125 -2875
-Wire Wire Line
-	-1275 -2850 -1275 -2825
-Connection ~ -1275 -2850
-Wire Wire Line
-	-1425 -3125 -1425 -3075
-Wire Wire Line
-	-1500 -3125 -1425 -3125
-Wire Wire Line
-	-1500 -3225 -1125 -3225
-Wire Wire Line
-	-1125 -3225 -1125 -3075
+	-1500 -3225 -825 -3225
 Wire Wire Line
 	-1500 -3325 2475 -3325
 Wire Wire Line
@@ -1085,19 +1067,11 @@ Wire Wire Line
 Wire Wire Line
 	-1200 -1950 -1200 -950
 Wire Wire Line
-	-500 850  -500 925 
+	-250 1375 -250 1450
 Wire Wire Line
-	-500 1125 -500 1175
+	-250 1650 -250 1750
 Wire Wire Line
-	-500 1175 -275 1175
-Wire Wire Line
-	-500 1400 -500 1375
-Wire Wire Line
-	-500 1375 -275 1375
-Wire Wire Line
-	-500 1675 -500 1600
-Wire Wire Line
-	125  1275 1025 1275
+	700  1625 700  1550
 Wire Wire Line
 	1000 75   2550 75  
 Wire Wire Line
@@ -1157,7 +1131,7 @@ Wire Wire Line
 Wire Wire Line
 	3125 2075 3125 2175
 Wire Wire Line
-	3125 2175 3225 2175
+	2650 2175 3225 2175
 Wire Wire Line
 	3200 2075 3200 2100
 Wire Wire Line
@@ -1173,12 +1147,7 @@ Wire Wire Line
 	2800 2125 2800 2075
 Connection ~ 1725 75  
 Wire Wire Line
-	2725 2075 2725 2475
-Wire Wire Line
-	2650 2075 2650 2475
-Wire Wire Line
 	2250 2475 3050 2475
-Connection ~ 2725 2475
 Wire Wire Line
 	2875 2475 2875 2500
 Connection ~ 2875 2475
@@ -1206,7 +1175,6 @@ Wire Wire Line
 	2175 2350 2175 2075
 Wire Wire Line
 	2250 2075 2250 2475
-Connection ~ 2650 2475
 Wire Wire Line
 	2325 2075 2325 2475
 Connection ~ 2325 2475
@@ -1262,17 +1230,6 @@ Connection ~ -1700 -1750
 Connection ~ -1950 -1275
 Connection ~ -2200 -1175
 Connection ~ -2450 -1075
-$Comp
-L Conn_01x02 J13
-U 1 1 5A2065E5
-P 1125 2625
-F 0 "J13" H 1125 2725 50  0000 C CNN
-F 1 "Conn_01x02" H 1125 2425 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1125 2625 50  0001 C CNN
-F 3 "" H 1125 2625 50  0001 C CNN
-	1    1125 2625
-	0    1    1    0   
-$EndComp
 Connection ~ 1025 2275
 Connection ~ 1125 2200
 Wire Notes Line
@@ -1287,8 +1244,6 @@ Wire Notes Line
 	5575 -5575 875  -5575
 Wire Notes Line
 	875  -5575 875  -150
-Text Notes 3250 -5175 0    60   ~ 0
-5 multiplexers 1:3 to select the right segment
 Wire Notes Line
 	-525 -100 2525 -100
 Wire Notes Line
@@ -1303,18 +1258,21 @@ Wire Notes Line
 	-750 3500 -750 -100
 Wire Notes Line
 	-750 -100 -500 -100
-Text Notes 7425 -1350 0    60   ~ 0
-Reset circuit
-Text Label 1875 150  0    60   ~ 0
-BLOCK_NEGATIVE_CLK
-Wire Notes Line
-	2425 2100 3000 2100
-Wire Notes Line
-	3000 2100 3000 2775
-Wire Notes Line
-	3000 2775 2425 2775
-Wire Notes Line
-	2425 2775 2425 2100
-Text Notes 2450 2375 0    60   ~ 0
-bug here, better ground it instead of -5v
+Wire Wire Line
+	2650 2075 2650 2175
+Connection ~ 3125 2175
+Wire Wire Line
+	2725 2075 2725 2175
+Connection ~ 2725 2175
+Wire Wire Line
+	700  1350 700  1275
+Connection ~ 700  1275
+Wire Wire Line
+	-250 1750 -225 1750
+Wire Wire Line
+	200  1275 1025 1275
+Wire Wire Line
+	200  1275 200  1750
+Wire Wire Line
+	200  1750 175  1750
 $EndSCHEMATC
