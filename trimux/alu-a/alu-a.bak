@@ -524,7 +524,7 @@ F 3 "" H 10525 -3800 50  0000 C CNN
 	1    10525 -3800
 	1    0    0    -1  
 $EndComp
-Text Label 8875 -3750 0    60   ~ 0
+Text Label 8800 -3750 0    60   ~ 0
 ENABLE_WRT
 $Comp
 L trimux U6
@@ -570,7 +570,7 @@ F 3 "" H 10475 -2175 50  0000 C CNN
 	1    10475 -2175
 	1    0    0    -1  
 $EndComp
-Text Label 8825 -2125 0    60   ~ 0
+Text Label 8750 -2125 0    60   ~ 0
 ENABLE_WRT
 $Comp
 L trimux U5

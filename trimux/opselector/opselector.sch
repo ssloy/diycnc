@@ -1275,4 +1275,46 @@ F 3 "" H 1125 2625 50  0001 C CNN
 $EndComp
 Connection ~ 1025 2275
 Connection ~ 1125 2200
+Wire Notes Line
+	875  -150 2475 -150
+Wire Notes Line
+	2475 -150 2475 -1525
+Wire Notes Line
+	2475 -1525 5575 -1525
+Wire Notes Line
+	5575 -1525 5575 -5575
+Wire Notes Line
+	5575 -5575 875  -5575
+Wire Notes Line
+	875  -5575 875  -150
+Text Notes 3250 -5175 0    60   ~ 0
+5 multiplexers 1:3 to select the right segment
+Wire Notes Line
+	-525 -100 2525 -100
+Wire Notes Line
+	2525 -100 2525 -1450
+Wire Notes Line
+	2525 -1450 8050 -1450
+Wire Notes Line
+	8050 -1450 8050 3500
+Wire Notes Line
+	8050 3500 -750 3500
+Wire Notes Line
+	-750 3500 -750 -100
+Wire Notes Line
+	-750 -100 -500 -100
+Text Notes 7425 -1350 0    60   ~ 0
+Reset circuit
+Text Label 1875 150  0    60   ~ 0
+BLOCK_NEGATIVE_CLK
+Wire Notes Line
+	2425 2100 3000 2100
+Wire Notes Line
+	3000 2100 3000 2775
+Wire Notes Line
+	3000 2775 2425 2775
+Wire Notes Line
+	2425 2775 2425 2100
+Text Notes 2450 2375 0    60   ~ 0
+bug here, better ground it instead of -5v
 $EndSCHEMATC
